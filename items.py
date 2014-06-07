@@ -52,7 +52,7 @@ weapons = [
     Item(30, 1600, 2.90, 'Knight Sword'),
     Item(31, 250, 3.40, 'Knight Rapier'),
     Item(32, 3500, 2.80, 'Knight Spear'),
-    # Item(33, 33000, 1.10, 'Tomhawk'),
+    Item(33, 33000, 1.10, 'Tomhawk'),
     Item(34, 11000, 2.25, 'Samurai Long Sword'),
     Item(35, 0, 3.50, 'Estoc'),
     Item(36, 0, 3.75, 'Estoc+1'),
