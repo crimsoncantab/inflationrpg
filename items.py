@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 from functools import total_ordering
 
 @total_ordering
@@ -90,7 +90,7 @@ armor = [
     Item(13, 800, 2.80, 'Knight'),
     Item(14, 5000, 2.60, 'Half'),
     Item(15, 3500, 2.30, 'Hard'),
-    # Item(16, 2500, 3.20, 'Gold'),
+    Item(16, 2500, 3.20, 'Gold'),
     Item(17, 0, 3.40, 'Light'),
     Item(18, 7000, 2.90, 'Crystal Cape'),
     # Item(19, 12000, 3.25, 'Four gods/Green Armor'),
