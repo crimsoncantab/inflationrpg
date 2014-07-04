@@ -62,7 +62,7 @@ weapons = [
     # Item(40, 5000, 2.80, 'Hard Lance'),
     # Item(41, 5000, 3.30, 'Gold Sword'),
     # Item(42, 18000, 2.00, 'Gold Axe'),
-    # Item(43, 3000, 3.70, 'Green Light Sword'),
+    Item(43, 3000, 3.70, 'Green Light Sword'),
     # Item(44, 6000, 3.20, 'Red Light Sword'),
     Item(45, 15000, 2.90, 'Crystal Hammer'),
     # Item(46, 15000, 3.65, 'Four gods/Red Lance'),
