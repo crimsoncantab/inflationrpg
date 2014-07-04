@@ -1,24 +1,26 @@
 #!/usr/bin/python3
 from functools import total_ordering
 
+
 @total_ordering
 class Item:
-    
-    def __init__(self, id, add, mult, name = 'No name'):
+    def __init__(self, id, add, mult, name='No name'):
         self.id, self.add, self.mult, self.name = id, add, mult, name
-        
+
     def __eq__(self, other):
         return self.mult == other.mult and self.add == other.add
-        
+
     def __lt__(self, other):
         return (self.mult, self.add) < (other.mult, other.add)
-        
+
     def __and__(self, other):
-        sm,sa,om,oa = self.mult,self.add,other.mult,other.add
-        return 0 if om == sm else (sm*sa-om*oa)/(om-sm)
-        
+        sm, sa, om, oa = self.mult, self.add, other.mult, other.add
+        return 0 if om == sm else (sm * sa - om * oa) / (om - sm)
+
     def __str__(self):
-        return '{:s}: +{:d}, *{:d}%'.format(self.name, self.add, int(100*self.mult))
+        return '{:s}: +{:d}, *{:d}%'.format(self.name, self.add, int(100 * self.mult))
+
+
 weapons = [
     Item(1, 5, 1.00, 'Dagger'),
     Item(2, 30, 1.10, 'Bowie Knife'),
@@ -98,6 +100,7 @@ armor = [
     # Item(21, 5000, 3.30, 'Aegis/Holy'),
 ]
 
+
 def get_optimum(items):
     items = list(items)
     items.sort()
@@ -118,10 +121,11 @@ def get_optimum(items):
     optimum.reverse()
     return optimum
 
+
 def print_optimum(optimum):
     for lower, upper, item in optimum:
         print('{:.0f}:{:.0f} -> {:s}'.format(lower, upper, item))
-        
+
 # print('Weapons List:')
 # print(*weapons, sep='\n')
 # print()
