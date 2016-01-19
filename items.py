@@ -124,7 +124,7 @@ def get_optimum(items):
 
 def print_optimum(optimum):
     for lower, upper, item in optimum:
-        print('{:.0f}:{:.0f} -> {:s}'.format(lower, upper, item))
+        print('{:.0f}:{:.0f} -> {:s}'.format(lower, upper, str(item)))
 
 # print('Weapons List:')
 # print(*weapons, sep='\n')
